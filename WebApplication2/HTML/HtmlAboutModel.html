@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyModule">
+<head>
+    <script src="../Angular/angular-1.3.0-beta.5/angular.js"></script>
+    <script src="../Script/HtmlAboutModel.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div ng-controller="MyController">
+        {{message}}
+        <br/>
+            Hiiiiiiiiiiii<br/>
+        <img ng-src="{{imgSrc}}" />
+        <br/>
+        First Name : {{Person.firstName}}
+        <br/>
+        Last Name : {{Person.lastName}}
+    </div>
+
+    <div ng-controller="AController">
+        User Name : {{user.name}} <br/>
+        <img ng-src="{{user.avatar_url}}" />
+    </div>
+</body>
+</html>

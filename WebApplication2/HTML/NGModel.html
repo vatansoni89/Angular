@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyModule">
+<head>
+    <meta charset="utf-8" />
+    <script src="../Angular/angular-1.3.0-beta.5/angular.js"></script>
+    <script src="../Script/NGModel.js"></script>
+    <title></title>
+</head>
+<body>
+
+    <div ng-controller="MyController">
+
+        {{username}}
+
+        <form name="formMy">
+            <input type="search" ng-model="username" />
+            <button type="button" ng-click="Search(username)">Click Here</button>
+        </form>
+
+        <div>
+            {{user.login}}
+            <img ng-src="{{user.avatar_url}}" />
+        </div>
+    </div>
+    
+</body>
+</html>
